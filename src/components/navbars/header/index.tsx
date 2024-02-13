@@ -4,6 +4,7 @@ import TopRow from "../TopRow";
 import { useMediaQuery } from "react-responsive";
 import BigScreenSearchBar from "../searchBars/bigscreen";
 import SearchBarMobile from "../searchBars/mobilescreen";
+import Categories from "../../categories";
 
 const Header = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
@@ -20,6 +21,7 @@ const Header = () => {
       ) : (
         <SearchBarMobile />
       )}
+      <Categories isMobile={isMobile} isTablet={isTablet} />
     </View>
   );
 };
