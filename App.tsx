@@ -1,3 +1,4 @@
+import "react-native-match-media-polyfill";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 import Home from "./src/screens/home";

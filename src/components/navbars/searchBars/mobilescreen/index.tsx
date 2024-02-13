@@ -9,7 +9,6 @@ const SearchBarMobile = () => {
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        flex: 1,
       }}
     >
       <View

@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { avatar, globe, logo, search } from "../../../../assets/icons";
+import { avatar, globe, logo, logoSM, search } from "../../../../assets/icons";
 
 const TopRow = ({ isTablet }: { isTablet: boolean }) => {
   const MiddleText = () => (
@@ -35,9 +35,8 @@ const TopRow = ({ isTablet }: { isTablet: boolean }) => {
       >
         <View>
           <Image
-            source={logo}
+            source={isTablet ? logoSM : logo}
             style={{
-              width: 100,
               height: 100,
             }}
             resizeMode="contain"

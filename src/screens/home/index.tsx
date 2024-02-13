@@ -4,7 +4,7 @@ import Header from "../../components/navbars/header";
 
 const Home = () => {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Header />
     </View>
   );
